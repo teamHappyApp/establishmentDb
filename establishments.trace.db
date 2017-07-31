@@ -1241,3 +1241,21 @@ Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/WeC
 	at org.h2.mvstore.FileStore.open(FileStore.java:173)
 	at org.h2.mvstore.MVStore.<init>(MVStore.java:347)
 	... 68 more
+2017-07-31 10:35:04 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Value too long for column "DESCRIPTION VARCHAR(255)": "'M, W, Th: $0.75 Off All Drinks Mon: $3.50 Pints Tues: $1 PBR/Blatz Cans Tues: $3 Blue Moon/Brooklyn Cans Wed: $3 Import/Craft B... (319)"; SQL statement:
+INSERT INTO "PUBLIC"."ESTABLISHMENT"("ID","ADDRESS","LATITUDE","LONGITUDE","NAME","PHONE_NUMBER","END_TIME","START_TIME","DESCRIPTION","IMAGE","FACEBOOK","URL","YELP")VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?) [22001-195]
+2017-07-31 10:35:04 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Value too long for column "DESCRIPTION VARCHAR(255)": "'M, W, Th: $0.75 Off All Drinks Mon: $3.50 Pints Tues: $1 PBR/Blatz Cans Tues: $3 Blue Moon/Brooklyn Cans Wed: $3 Import/Craft B... (319)"; SQL statement:
+INSERT INTO "PUBLIC"."ESTABLISHMENT"("ID","ADDRESS","LATITUDE","LONGITUDE","NAME","PHONE_NUMBER","END_TIME","START_TIME","DESCRIPTION","IMAGE","FACEBOOK","URL","YELP")VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?) [22001-195]
+2017-07-31 10:37:02 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Value too long for column "DESCRIPTION VARCHAR(255)": "'$2.50 Domestic Bottles M, W, Th: $0.75 Off All Drinks Mon: $3.50 Pints Tues: $1 PBR/Blatz Cans Tues: $3 Blue Moon/Brooklyn Cans... (342)"; SQL statement:
+INSERT INTO "PUBLIC"."ESTABLISHMENT"("ID","ADDRESS","LATITUDE","LONGITUDE","NAME","PHONE_NUMBER","END_TIME","START_TIME","DESCRIPTION","IMAGE","FACEBOOK","URL","YELP")VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?) [22001-195]
+2017-07-31 10:37:02 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Value too long for column "DESCRIPTION VARCHAR(255)": "'$2.50 Domestic Bottles M, W, Th: $0.75 Off All Drinks Mon: $3.50 Pints Tues: $1 PBR/Blatz Cans Tues: $3 Blue Moon/Brooklyn Cans... (342)"; SQL statement:
+INSERT INTO "PUBLIC"."ESTABLISHMENT"("ID","ADDRESS","LATITUDE","LONGITUDE","NAME","PHONE_NUMBER","END_TIME","START_TIME","DESCRIPTION","IMAGE","FACEBOOK","URL","YELP")VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?) [22001-195]
+2017-07-31 11:30:19 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLException: Data conversion error converting "'' (ESTABLISHMENT_FILTERS: ESTABLISHMENTS_ID BIGINT NOT NULL)"; SQL statement:
+INSERT INTO "PUBLIC"."ESTABLISHMENT_FILTERS"("ESTABLISHMENTS_ID","FILTERS_ID")VALUES(?,?) -- (?1, ?2) [22018-195]
+2017-07-31 11:30:19 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLException: Data conversion error converting "'' (ESTABLISHMENT_FILTERS: ESTABLISHMENTS_ID BIGINT NOT NULL)"; SQL statement:
+INSERT INTO "PUBLIC"."ESTABLISHMENT_FILTERS"("ESTABLISHMENTS_ID","FILTERS_ID")VALUES(?,?) -- (?1, ?2) [22018-195]
